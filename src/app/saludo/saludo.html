@@ -1,0 +1,14 @@
+<!-- Siempre mostramos el primer mensaje -->
+<p>{{ mensaje1 }}</p>
+
+<!-- Botón que invoca al método toggleMensaje() -->
+<!-- El texto del botón cambia dinámicamente según el estado de "mostrar" -->
+<button (click)="toggleMensaje()">
+  {{ mostrar ? 'Ocultar' : 'Mostrar' }} mensaje
+</button>
+
+<!-- Nueva sintaxis de Angular para control de flujo -->
+<!-- @if es equivalente a *ngIf, pero más moderno -->
+@if (mostrar) {
+  <p>{{ mensaje2 }}</p>
+}
