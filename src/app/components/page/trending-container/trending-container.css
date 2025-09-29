@@ -1,0 +1,23 @@
+.trending-container {
+  padding: 10px; /* espacio arriba y abajo */
+  border-radius: 8px;
+  margin: 10px; /* espacio alrededor del contenedor */
+}
+
+h2{
+    font-family: var(--poppins-semibold-font-family);
+    font-size: var(--poppins-semibold-font-size);
+    font-style: var(--poppins-semibold-font-style);
+    color: aliceblue;
+    padding: 20px 0 0 20px;
+
+}
+
+.movie-list-container {
+  height: auto;        /* se adapta al contenido */
+  max-height: 80vh;    /* como máximo 80% de la pantalla */
+  margin: 0 auto;
+  padding: 0.5rem;       /* menos espacio interior */
+}
+
+

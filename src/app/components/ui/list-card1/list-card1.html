@@ -1,0 +1,23 @@
+<div class="movie-list-container">
+  <!-- Película seleccionada -->
+  <!--  @if (selectedMovie()) {
+        <div class="selected-movie">
+          <h2>🎯 Película Seleccionada:</h2>
+          <p class="selected-title">{{ selectedMovie() }}</p>
+        </div>
+      }
+       -->
+
+  <div class="movies-wrapper">
+    <button class="nav-btn left" (click)="scrollLeft()">&#10094;</button>
+
+    <!-- Grid de películas usando @for -->
+    <div class="movies-grid" #movieGrid>
+      @for (movie of movies(); track movie.id) {
+      <app-card-1 [movie]="movie" (movieSelected)="onMovieSelected($event)"> </app-card-1>
+      }
+    </div>
+
+    <button class="nav-btn right" (click)="scrollRight()">&#10095;</button>
+  </div>
+</div>

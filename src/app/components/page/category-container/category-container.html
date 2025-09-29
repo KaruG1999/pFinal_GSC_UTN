@@ -1,0 +1,17 @@
+<div class="category-container">
+  <h2 class="category-title">Categories</h2>
+
+  <div class="category-grid">
+    <div class="scrolling-content">
+      
+      <!-- Primera copia de categories -->
+      <div class="category-card" *ngFor="let cat of categories">
+        <img [src]="cat.image" [alt]="cat.name" />
+        <div class="overlay">
+          <span class="category-text">{{ cat.name }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

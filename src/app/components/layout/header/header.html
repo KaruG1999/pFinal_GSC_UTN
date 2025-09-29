@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="header-background" url="">
+    <app-nav-bar></app-nav-bar>
+
+    <div class="hero">
+      <!-- Interpolación de variables -->
+      <h1>{{ title }}</h1>
+      <p>{{ description }}</p>
+
+      <div class="hero-actions">
+        <app-primary-button label="Click Me"></app-primary-button>
+        <app-button-like></app-button-like>
+      </div>
+    </div>
+    <app-switch-mood class="switch-mood"></app-switch-mood>
+  </div>
+</header>

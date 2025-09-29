@@ -1,0 +1,35 @@
+button {
+  box-sizing: border-box;
+  background: linear-gradient(99deg, #fff 3.36%, #604583 238.16%);
+  border: 1px solid #604583;
+  border-radius: 14px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 49px;
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* sombra más intensa */
+  background: linear-gradient(99deg, #fff 3.36%, #7a5db3 238.16%); /* cambio sutil de color */
+}
+
+.Heart_6_210.liked svg path {
+  stroke: #604583; /*cuando está likeado */
+  fill: #604583; /* opcional si querés que se llene */
+  transition: all 0.3s ease-in-out;
+}
+
+.Heart_6_210 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}

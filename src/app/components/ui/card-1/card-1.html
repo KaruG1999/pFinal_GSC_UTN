@@ -1,0 +1,35 @@
+<div class="movie-card" (click)="selectMovie()"> <!-- Al hacer clic en la tarjeta de la película -->
+  <!-- Imagen de la película -->
+  @if (movie.image) {
+  <div class="movie-image">
+    <img [src]="movie.image" [alt]="movie.title" />
+  </div>
+  }
+
+  <!-- Contenido de la película -->
+  <div class="movie-content">
+    <h3 class="movie-title">{{ movie.title }}</h3>
+
+    <div class="info-container">
+      <p class="movie-year">{{ movie.year }}</p>
+      <!-- Mostrar género si existe -->
+      <p>|</p>
+      @if (movie.genre) {
+      <p class="movie-genre">
+        {{ movie.genre }}
+      </p>
+      }
+    </div>
+    <!--  Mostrar descripción solo si no está vacía 
+        @if (movie.description && movie.description.trim().length > 0) {
+          <p class="movie-description">
+            {{ movie.description }}
+          </p>
+        } -->
+
+        <!-- <button class="select-btn" (click)="selectMovie()">
+          Seleccionar
+        </button>  -->
+  </div>
+</div>
+

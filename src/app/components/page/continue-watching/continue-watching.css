@@ -1,0 +1,88 @@
+.continue-container {
+  margin: 2rem 0;
+  color: white;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap; /* permite que las cards bajen si no entran */
+  gap: 1rem;
+  justify-content: center; /* centradas en desktop */
+  margin: 20px;
+  width: 100%;
+}
+
+h2 {
+  font-family: var(--poppins-semibold-font-family);
+  font-size: var(--poppins-semibold-font-size);
+  font-style: var(--poppins-semibold-font-style);
+  color: aliceblue;
+  padding: 20px 0 0 40px;
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px; /* ancho fijo */
+  aspect-ratio: 16 / 9; /* mantiene rectángulo (más ancho que alto) */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.like-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.like-btn svg path {
+  fill: transparent;
+  stroke: #774972;
+  stroke-width: 2;
+  transition: fill 0.3s ease, stroke 0.2s ease;
+}
+
+.like-btn svg path.liked {
+  fill: #774972;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  animation: borderFlash 0.2s;
+}
+
+@keyframes borderFlash {
+  100% {
+    stroke: #774972;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+  .cards-grid {
+    flex-direction: column; /* en columna */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 95%; /* ocupan casi todo el ancho */
+    max-width: 320px; /* límite para que no se hagan gigantes */
+  }
+}

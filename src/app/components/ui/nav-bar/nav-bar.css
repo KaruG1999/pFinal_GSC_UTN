@@ -1,0 +1,86 @@
+.group-nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* ocupar todo el ancho */
+  padding: 20px; /* padding más moderado */
+  box-sizing: border-box; /* incluye el padding dentro del 100% */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.group-options {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.group-options span {
+  transition: color 0.3s, text-shadow 0.3s; /* efecto al pasar el mouse */
+}
+
+.group-options span:hover {
+  color: #c4c4c4; /* gris clarito al hover */
+  text-shadow: 0 0 5px #192655;
+  transform: scale(1.005); /* efecto de zoom */
+}
+
+.group-99_7-1243 {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.group-98_7-1244 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 725px) {
+  .group-nav-bar {
+    padding: 15px 20px;
+  }
+  .group-options {
+    gap: 15px; /* achicar separación */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .group-nav-bar {
+    padding: 8px 10px;
+    flex-direction: row; /* mantener en fila */
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .group-options {
+    gap: 8px;
+    font-size: 12px; /* texto más chico */
+  }
+
+  .group-99_7-1243 {
+    gap: 15px; /* reducir separación */
+  }
+
+  .group-98_7-1244 .user_name {
+    display: none; /* ocultar nombre de usuario */
+  }
+
+  .user_image svg {
+    width: 28px;
+    height: 28px; /* reducir la imagen un poco */
+  }
+}

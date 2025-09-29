@@ -1,0 +1,75 @@
+.header {
+  min-height: 455px; /* que la imagen ocupe toda la pantalla */
+  padding: 20px;
+  box-sizing: border-box;
+  color: rgb(233, 233, 233);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-background {
+  height: 455px;
+  width: 100%;
+  /* importante / delante de img en CSS */
+  background: url('/img/pawel-czerwinski-suLgJZ1edT4-unsplash.jpg') center/cover no-repeat;
+
+  /* filter para gradiente oscura 
+  filter: */
+  background-attachment: fixed; /* fondo fijo al scrollear */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  margin: 200px 0px 40px 30px;
+  max-width: 100%;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.hero p {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  margin-left: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0 0 0;
+
+}
+
+.hero-actions button {
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  background: linear-gradient(99deg, #fff 3.36%, #fff0 238.16%);
+  border: 1px solid #fff;
+  border-radius: 14px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 49px;
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.switch-mood {
+  position: absolute;
+  bottom: 15px; /* distancia desde abajo */
+  right: 15px; /* distancia desde la derecha */
+}

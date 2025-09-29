@@ -1,0 +1,19 @@
+.moonlit-box {
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 400px;
+  margin: 2rem auto;
+
+  /* Glow effect */
+  box-shadow: 0 0 10px #3f6170, 0 0 20px #7aa7bc, 0 0 40px var(--coleccion-variable-yinmn-blue);
+
+  background: rgba(20, 20, 30, 0.8); /* leve fondo translúcido */
+  backdrop-filter: blur(6px);
+}
+
+.glow-text {
+  padding: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+}

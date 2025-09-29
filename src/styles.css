@@ -1,1 +1,127 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --body-XS-font-family: 'Roboto', Helvetica;
+  --body-XS-font-size: 12px;
+  --body-XS-font-style: normal;
+  --body-XS-font-weight: 400;
+  --body-XS-letter-spacing: 0px;
+  --body-XS-line-height: 139.9999976158142%;
+  --colecci-n-variable-ceil: rgba(146, 149, 208, 1);
+  --coleccion-variable-chinese-black: rgba(10, 17, 26, 1);
+  --coleccion-variable-languid-lavender: rgba(216, 208, 231, 1);
+  --coleccion-variable-old-lavender: rgba(124, 93, 114, 1);
+  --coleccion-variable-pale-cerulean: rgba(159, 183, 227, 1);
+  --coleccion-variable-pink-lavender: rgba(223, 187, 202, 1);
+  --coleccion-variable-twilight-lavender: rgba(119, 73, 114, 1);
+  --coleccion-variable-vampire-black: rgba(14, 2, 4, 1);
+  --coleccion-variable-wine-red: rgba(163, 14, 43, 1);
+  --coleccion-variable-yinmn-blue: #294a8f;
+  --coolgray-60: rgba(105, 112, 119, 1);
+  --coolgray-90: rgba(33, 39, 42, 1);
+  --defaultwhite: rgba(255, 255, 255, 1);
+  --other-menu-m-font-family: 'Roboto', Helvetica;
+  --other-menu-m-font-size: 16px;
+  --other-menu-m-font-style: normal;
+  --other-menu-m-font-weight: 500;
+  --other-menu-m-letter-spacing: 0px;
+  --other-menu-m-line-height: 100%;
+  --playfair-display-SC-font-family: 'Playfair Display SC', Helvetica;
+  --playfair-display-SC-font-size: 32px;
+  --playfair-display-SC-font-style: normal;
+  --playfair-display-SC-font-weight: 700;
+  --playfair-display-SC-letter-spacing: 3.2px;
+  --playfair-display-SC-line-height: 40px;
+  --poppins-medium-font-family: 'Poppins', Helvetica;
+  --poppins-medium-font-size: 18px;
+  --poppins-medium-font-style: normal;
+  --poppins-medium-font-weight: 500;
+  --poppins-medium-letter-spacing: 0px;
+  --poppins-medium-line-height: 24px;
+  --poppins-regular-font-family: 'Poppins', Helvetica;
+  --poppins-regular-font-size: 16px;
+  --poppins-regular-font-style: normal;
+  --poppins-regular-font-weight: 400;
+  --poppins-regular-letter-spacing: 0px;
+  --poppins-regular-line-height: 24px;
+  --poppins-semibold-font-family: 'Poppins', Helvetica;
+  --poppins-semibold-font-size: 16px;
+  --poppins-semibold-font-style: normal;
+  --poppins-semibold-font-weight: 600;
+  --poppins-semibold-letter-spacing: 0px;
+  --poppins-semibold-line-height: 24px;
+  --x-8: rgba(255, 255, 255, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Agrego por breve espacio a la derecha de app */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* elimina cualquier scroll horizontal */
+}
+
+body {
+  background: linear-gradient(to bottom right, #0A111A,#0A111A, #1C2F48,#315480);
+  background-attachment: fixed; /* fondo fijo al scrollear */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* importante: no forzar altura al app-root */
+app-root {
+  display: block;
+  min-height: 100%;
+}
+
+
+/* Breakpoints globales */
+@media (max-width: 1024px) {
+  body {
+    font-size: var(--poppins-regular-font-size);
+  }
+}
+
+@media (max-width: 725px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

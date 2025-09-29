@@ -1,0 +1,115 @@
+footer {
+  background-color: var(--coleccion-variable-chinese-black);
+  color: var(--defaultwhite);
+  /* agregar degrade superior */
+  box-shadow: 10px 0px 0px var(--coleccion-variable-yinmn-blue);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  font-family: var(--poppins-medium-font-family);
+  font-size: var(--poppins-medium-font-size);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  gap: 20px;
+}
+
+.footer-about {
+  gap: 10px;
+  max-width: 400px;
+  line-height: 1;
+}
+
+.footer-about .logo-footer {
+  width: 100px;
+  height: auto;
+}
+
+.footer-about p {
+  font-family: 'Poppins', serif;
+  font-size: 14px;
+  font-weight: regular;
+
+}
+
+.footer-links {
+  list-style: none; /* quita viñetas */
+  display: column;
+  gap: 30px; /* espacio entre items */
+  justify-content: center; /* centra horizontal */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;   /* quita el subrayado */
+  color: white;            /* color blanco */
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s;  /* efecto al pasar el mouse */
+}
+
+.footer-links li a:hover {
+  color: #ccc; /* gris clarito al hover */
+}
+
+.footer-social-media p {
+
+  font-weight: bold;
+  margin: 10px;
+}
+
+.footer-social-media {
+  display: column;
+  justify-content: space-between;
+  gap: 15px;
+
+}
+
+.downloadApp {
+  display: flex;
+
+  gap: 10px;
+}
+
+.downloadApp img {
+  margin: 5px;
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.downloadApp img:hover {
+  filter: brightness(0.8); /* efecto al pasar el mouse */
+  transform: scale(1.005); /* efecto de zoom */
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  filter: brightness(0.8); /* efecto al pasar el mouse */
+  transform: scale(1.005); /* efecto de zoom */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid var(--coolgray-60);
+}

@@ -1,0 +1,30 @@
+<app-trending-container></app-trending-container>
+<app-continue-watching></app-continue-watching>
+
+<!-- Práctica de pasar datos al componente hijo -->
+
+<app-featured-movie
+  [movie]="{
+    id: 1,
+    title: 'Harry Potter',
+    year: 2001,
+    description:
+      'During his first year at Hogwarts School of Witchcraft and Wizardry, Harry Potter discovers that a malevolent and powerful wizard named Voldemort is searching for a philosopher\'s stone that extends the life of its possessor.',
+    image: '/img/aditya-vyas-5qUJfO4NU4o-unsplash.jpg',
+    genre: 'Fantasy'
+  }"
+></app-featured-movie>
+
+<app-moonlit-box></app-moonlit-box>
+<app-category-container
+  [categories]="[
+    { id: 1, name: 'Mistery', image: 'img/ste-lorena-NQ0QDdpkQ10-unsplash.jpg' },
+    { id: 2, name: 'Romance', image: 'img/nathan-dumlao-ZsPlbTxFosA-unsplash.jpg' },
+    { id: 3, name: 'Fantasy', image: 'img/coppertist-wu-27ZsK8kEKjY-unsplash.jpg' },
+    { id: 4, name: 'Horror', image: 'img/jon-butterworth-pxhKYRe_SSw-unsplash.jpg' },
+    { id: 5, name: 'Animation', image: 'img/omk-6DhD3VYd9q8-unsplash.jpg' },
+    { id: 6, name: 'History', image: 'img/zane-lee-8mLc5-voTIc-unsplash.jpg' },
+    { id: 7, name: 'Drama', image: 'img/stormseeker-rX12B5uX7QM-unsplash.jpg' },
+    { id: 8, name: 'Sci-Fi', image: 'img/maksim-istomin-BSx5n20J-qg-unsplash.jpg' }
+  ]"
+></app-category-container>
