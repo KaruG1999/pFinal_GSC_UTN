@@ -17,7 +17,7 @@ Está desarrollado en **Angular** y se conecta con el **Backend en .NET**, donde
 
 ### Home de Moonlit
 
-![Home de Moonlit](public\img\Moonlit-Home.png)
+![Home de Moonlit](public/img/Moonlit-Home.png)
 
 ### Prototipo en Figma
 
